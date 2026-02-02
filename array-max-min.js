@@ -22,3 +22,22 @@ function getMax(numbers) {
 
 let output = getMax(heights);
 console.log("Max height is: ", output);
+
+
+// Find the minimum value of an array.
+
+let weight = [40, 45, 36, 58, 55, 47, 49, 43, 60];
+
+function getMin(numbers){
+    let min = numbers[0];
+
+    for(const num of numbers ){
+        if(num < min){
+            min = num;
+        }
+    }
+    return min;
+}
+
+let result = getMin(weight);
+console.log("minimum weight is: ", result);
